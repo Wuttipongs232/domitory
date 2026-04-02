@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2026 at 07:39 PM
+-- Generation Time: Apr 02, 2026 at 11:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,9 +42,9 @@ CREATE TABLE `rooms` (
 INSERT INTO `rooms` (`roomNumber`, `typeID`, `tenantName`, `status`, `image`) VALUES
 ('101', 'T01', 'สรวิช นะจ้ะ', 'มีคนเช่า', 'images.jpg'),
 ('102', 'T01', '', 'ว่าง', NULL),
-('201', 'T02', 'สาระ หน่อยดิ', 'มีคนเช่า', NULL),
+('201', 'T02', 'สาระ หน่อยดิ', 'มีคนเช่า', '122385352.jpg'),
 ('202', 'T02', NULL, 'ว่าง', NULL),
-('301', 'T03', 'พงศกร หมอนทอง', 'มีคนเช่า', NULL);
+('301', 'T03', 'พงศกร หมอนทอง', 'มีคนเช่า', 'onxuc98pzPurqtJgJGZ-o.jpg');
 
 -- --------------------------------------------------------
 
