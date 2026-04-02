@@ -7,12 +7,10 @@ if (isset($_POST['roomNumber'])) {
     $typeID = $_POST['typeID'];
     $status = $_POST['status'];
 
-    //จัดการเรื่องรูปภาพ
     $uploadFile = $_FILES['image']['name'];
     $tmpFile = $_FILES['image']['tmp_name'];
     
     if (!empty($uploadFile)) {
-        // กรณีเลือกรูปใหม่
         $fullpath = "../image/" . $uploadFile;
         move_uploaded_file($tmpFile, $fullpath);
         
@@ -25,7 +23,6 @@ if (isset($_POST['roomNumber'])) {
             ':id' => $roomNumber
         ];
     } else {
-        // กรณีไม่ได้เลือกรูปใหม่ ให้ใช้ข้อมูลเดิม (ไม่แก้คอลัมน์ image)
         $sql = "UPDATE rooms SET tenantName=:name, typeID=:type, status=:status WHERE roomNumber=:id";
         $params = [
             ':name' => $tenantName,
